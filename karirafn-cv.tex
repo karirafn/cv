@@ -1,0 +1,127 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+
+\moderncvstyle[black]{casual}
+
+\newcommand{\cvdoublecolumn}[2]
+{
+	\cvitem[0.75em]{}
+	{
+		\begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}
+		\hfill
+		\begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}
+	}
+}
+
+\newcommand{\cvreference}[5]
+{
+	\textbf{#1}\newline
+	\addresssymbol~#2\newline
+	#3\newline
+	\emailsymbol~\texttt{\href{mailto:#4}{\nolinkurl{#4}}}\newline
+	\mobilesymbol~#5
+}
+
+\name{}{Kári Rafn Karlsson}
+\address{Eyrarlundur 4}{300 Akranes}{}
+\phone[mobile]{695~3348}
+\email{karirafn@gmail.com}
+\extrainfo{07/02/1985}
+\photo[64pt][0.1pt]{picture}
+\social[linkedin]{karirafn}
+\social[github]{karirafn}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Experience}
+
+        \cventry{2020 -- }{PDM Specialist and Software Developer}{Skaginn 3X}{}{}{
+            Lead developer of IIS hosted internal company REST API and website using .NET 6, SQL and Blazor Server utilizing GitHub Actions for CI/CD. Development of internal process automation using .NET framework 4.8 deployed with PowerShell scripts.}
+
+        \cventry{2020 -- }{PDM and Cloud Consultant}{Self employed}{}{}{
+            Deployment and administration of Autodesk Vault PDM system on Azure using bicep scripts as well as developing Autodesk Inventor add-ins for process automation in .NET.}
+
+        \cventry{2018 -- 2020}{Mechanical designer}{Skaginn 3X}{}{}{
+            Product owner of automatic plate freezers, definition of internal processes and procedures, implementation/administration of PDM system, conformation of data for ERP system, component standardization, product data automation, etc.}
+        
+        \cventry{2015 -- 2017}{Mechanical designer}{VHE}{}{}{
+            Machine design, process automation using VB, development of product configurator using .NET and PDM system implementation/administration.}
+	
+    \section{Education}
+
+        \cventry{2009 --}{M.Sc. Mechanical Engineering}{Reykjavík University}{}{}{}
+        \cventry{2006 -- 2009}{B.Sc. Mechatronic Engineering}{Reykjavík University}{}{}{}
+
+	\section{Programming skills}
+
+        \cvitem{Languages}{
+            Great handle on C\# as well as varying degrees of familiarity with Java, JavaScript/TypeScript, Matlab, Python, Rust and VB.}
+
+        \cvitem{Software and tools}{
+            Extensive experience with .NET, ASP.NET, Entity Framework, Blazor, SQL, Azure and GitHub Actions. Some experience with WPF and Docker.}
+	
+	\section{Interests}
+
+        \cvitem{Programming}{
+            In my spare time I often find myself learning about upcoming language features or interesting techniques. I watch recordings from conferences that interest me, e.g. NDC, goto;, etc.}
+
+        \cvitem{Powerlifting}{
+            I am an international powerlifting referee and will go abroad 1-2 times per year to referee at international competitions. I was the treasurer on the board of the Icelandic Powerlifting Federation and chairman of the national team committee.}
+
+    \newpage
+	
+    \section{Languages}
+
+        \cvitemwithcomment{Icelandic}{Excellent}{
+            Great proficiency of both written and spoken Icelandic.}
+        
+        \cvitemwithcomment{English}{Excellent}{
+            Great proficiency of both written and spoken English.}
+        
+        \cvitemwithcomment{Danish}{Decent}{
+            Good written language proficiency.}
+        
+        \cvitemwithcomment{German}{Adequate}{
+            Four courses in German at secondary school.}
+
+	\section{References}
+
+        \cventry
+        {}
+        {Trausti Árnason}
+        {VP of Product}
+        {Controlant}
+        {}
+        {\emailsymbol trausti.arnason@controlant.com \mobilesymbol 825 8247}
+
+        \cventry
+        {}
+        {Axel Steinþórsson}
+        {Owner}
+        {Eurometal}
+        {}
+        {\emailsymbol axel@eurometal.is \mobilesymbol 844 5814}
+
+        \cventry
+        {}
+        {Einir Pálsson}
+        {Software Developer}
+        {Skaginn 3X}
+        {}
+        {\emailsymbol einir@skaginn3x.com \mobilesymbol 866 6352}
+        
+        \cventry
+        {}
+        {Nökkvi Andersen}
+        {Project Manager}
+        {Carbfix}
+        {}
+        {\emailsymbol nokkvi.andersen@or.is \mobilesymbol 899 9489}
+
+\end{document}

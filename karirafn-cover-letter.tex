@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+
+\moderncvstyle[black]{casual}
+
+\name{Kári Rafn}{Karlsson}
+\address{Eyrarlundur 4}{300 Akranes}{}
+\phone[mobile]{695~3348}
+\email{karirafn@gmail.com}
+\extrainfo{07/02/1985}
+\photo[64pt][0.1pt]{picture}
+\social[linkedin]{karirafn}
+\social[github]{karirafn}
+
+\recipient{Employer}{}
+\opening{Greetings.}
+
+\begin{document}
+{
+    \fancyfoot[r]{}
+    \setcounter{page}{0}
+    \date{\today}
+    \closing{Best regards,}
+    
+    \makelettertitle
+
+    I would like to introduce myself briefly for the advertised job of software developer.
+
+    I have great experience with working in groups after partaking in diverse design projects, at school and work. During my studies at Reykjavík University I took part in designing a solid fuel rocket as well as an Automatic Underwater Vehicle (AUV). At my jobs at VHE and Skaginn 3X I have taken part in large design projects of machines and systems of various sizes.
+
+    My career started as a mechanical engineer designing machinees for fish processing and aluminum smelting. Whenever I saw oppurtunity to automate repeated manual tasks I would grab it and quckly became proficient in VB and later, to a greater extent, C\# as those were the languages supported by the CAD and PDM software (Inventor and Vault by Autodesk).
+    
+    I have developed various custom extensions/job handlers to perform a variety of automated tasks, such as validating and enforce policies on 3D CAD models after certain life cycle state changes as well as exporting items to the ERP system on release. These extensions are written in .NET Framework 4.8 as that it the latest version of .NET supported by Autodesk products.
+    
+    When policy validation fails and cannot be enforced a request is sent to a REST API I created using .NET 6 and the issue is stored in a SQL database created using Entity Framework code first. These issues are then displayed on a website created with Blazor Server on a per-user basis. The website is also a one-stop resource for in-house company information, such as documentation, company policies, guides, calculators, etc.
+
+    Requests to the Vault PDM system use SOAP and on my own time I created an open source project called FluentVault (https://github.com/karirafn/fluentvault) that enables sending requests to the Vault without using Autodesk DLLs as those are limited to .NET Framework 4.8. FluentVault uses the fluent syntax for easier use as Vault requests often contain multiple parameters that can quickly overwhelm the user.
+
+    For the last several years I have spent the majority of my time in software development and have enjoyed it immensely. I have focused on learning and using best practices and keeping up with the latest trends in .NET development as well as looking into other programming languages for inspiration and ideas.
+
+    I try to keep my code as clean as possible and I am a big fan of self-documenting code. I also try to practice functional programming whenever there's oppurtunity.
+
+    Two of my greatest qualities are positivity and helpfulness. Ever since I started working with computers my co-workers have sought my help when they have software issues and I have gladly helped them. I also pride myself in finding solutions when they are not easy to locate. I am detail oriented and it means a lot to me that things are the way they are supposed to be. Efficiency is another term I value greatly and I try to eliminate manual work and repetition whenever I spot it.
+    
+    If there are any questions I am available by phone, e-mail or simply an interview.
+    
+    \makeletterclosing
+}
+\end{document}

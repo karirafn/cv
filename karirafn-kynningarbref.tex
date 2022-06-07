@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+
+\moderncvstyle[black]{casual}
+
+\name{Kári Rafn}{Karlsson}
+\address{Eyrarlundur 4}{300 Akranes}{}
+\phone[mobile]{695~3348}
+\email{karirafn@gmail.com}
+\extrainfo{07/02/1985}
+\photo[64pt][0.1pt]{picture}
+\social[linkedin]{karirafn}
+\social[github]{karirafn}
+
+\recipient{Jóhann Value Sævarsson \newline Kristján Pétur Sæmundsson}{Icelandair}
+\opening{Sæll.}
+
+\begin{document}
+{
+    \fancyfoot[r]{}
+    \setcounter{page}{0}
+    \date{\today}
+    \closing{Með bestu kveðju,}
+    
+    \makelettertitle
+
+    Mig langar til að kynna mig stuttlega vegna auglýsts starfs hugbúnaðarsérfræðings.
+
+    Ferill minn hófst sem hönnuður á vélum fyrir fiskvinnslu og álver. Þegar ég kom auga á tækifæri til að sjálfvirkja endurtekna handavinnu þá nýtti ég mér þau og náði fljótt góðum tökum á VB og C\# þar sem að það voru þau tungumál sem voru í boði fyrir þann CAD og PDM hugbúnað sem ég notaðist við (Inventor og Vault frá Autodesk).
+
+    Ég hef hannað ýmsar sérbúnar viðbætur fyrir þessi kerfi til þess að framkvæma aðgerðir af ýmsum toga, t.d. sannreynsla og leiðrétting 3D módela eftir að ákveðnar ástandsbreytingar (e. life cycle state change) eiga sér stað auk yfirflutnings gagna úr PDM yfir í ERP kerfi við útgáfu módela. Þessar viðbætur eru skrifaðar í .NET Framework 4.8 þar sem að það er nýjasta útgáfa .NET sem er studd af hugbúnaði frá Autodesk.
+    
+    Ef sannreynsla módela mistekst og ekki er hægt að leiðrétta gögnin sendir kerfið villuskilaboð á REST API sem ég hannaði í .NET 6. Skilaboðin eru geymd í SQL gagnagrunni sem er haldið utan um með Entity Framework. Skilaboðin eru birt á innanhúsvefsíðu sem ég útbjó með Blazor en vefsíðan er einnig notuð sem upplýsingagátt fyrir starfsmenn þar sem hægt er að finna skjöl, leiðbeiningar, reglur, reiknivélar o.fl.
+
+    Beiðnir eru sendar á Vault PDM kerfið með SOAP og í mínum frítíma útbjó ég opinn hugbúnað (e. open source) sem ég kalla FluentVault (https://github.com/karirafn/fluentvault). Þessi hugbúnaður gerir notandanum kleift að senda beiðnir í Vault án þess að nota DLL frá Autodesk og þar með notast við nýjustu útgáfur .NET. FluentVault notast við \emph{fluent} málskipanina (e. syntax) sem auðveldar notkun þar sem að Vault beiðnir innihalda oft fjölda breita sem geta gert einfalda hluti flókna.
+
+    Undanfarin ár hef ég varið meirihluta vinnutíma míns við forritun og ég hef notið þess mikið. Ég hef einsett mér að læra og nota þær aðferðir sem almennt þykja bestar (e. best practices) og að læra þær nýjungar sem koma fram þegar nýjar útgáfur af .NET eru gefnar út. Ég hef einnig lagt áherslu á að kynna mér önnur forritunartungumál fyrir innblástur og hugmyndir.
+
+    Ég reyni eftir fremsta megni að hafa kóðan minn hreinan og læsilegan og er mikill aðdáandi sjálfskjalandi (e. self-documenting) kóða. Ég er einnig mikill aðdáandi fallaforritunar (e. functional programming) og reyni að nota hana eftir fremsta megni.
+
+    Tveir af mínum helstu kostum eru jákvæðni og hjálpsemi en allt frá því að ég fór að vinna við tölvu hafa samstarfsmenn mínir leitað til mín vegna hugbúnaðarvandamála sem koma upp við þeirra vinnu. Ég er einnig þeim hæfileikum gæddur að eiga auðvelt með að finna lausnir þegar þær liggja ekki beint við.
+
+    Ég hef ekki sagt upp hjá núverandi vinnuveitanda þannig að það eru að hámarki 3 mánuðir í að ég geti haft störf. Það er þó möguleiki á því að fá að hætta fyrr.
+    
+    Ef það eru einhverjar spurningar þá er hægt að hafa samband við mig í síma, tölvupóst eða fá mig í viðtal.
+    
+    \makeletterclosing
+}
+\end{document}
