@@ -1,7 +1,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 
 \usepackage[T1]{fontenc}
-\usepackage[english]{babel}
+\usepackage[icelandic]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.8]{geometry}
 
@@ -42,39 +42,75 @@
 	\section{Starfsreynsla}
 
         \cventry{2020 -- }{PDM sérfræðingur og forritari}{Skaginn 3X}{}{}{
-            Yfirhönnuður á IIS hýstri innanhús REST API og vefsíðu unnið í .NET 6, SQL og Blazor Server og notar GitHub Actions fyrir CI/CD. Hönnun sjálfvirkra ferla með .NET framework 4.8 og gefið út með PowerShell skriptum.}
+            % Yfirhönnuður á IIS hýstri innanhús REST API og vefsíðu unnið í .NET 6, SQL og Blazor Server og notar GitHub Actions fyrir CI/CD. Hönnun sjálfvirkra ferla með .NET framework 4.8 og gefið út með PowerShell skriptum.
+            \begin{itemize}
+                \item Umsjón Autodesk Inventor CAD (\emph{Computer Aided Design}) forrita
+                \item Umsjón Autodesk Vault PDM (\emph{Product Data Management}) kerfis
+                \item Hönnun, forritun og innleiðing á REST API og Blazor Server vefsíðu í .NET 6 (Core)
+                \item CI/CD með GitHub Actions
+                \item Hönnun viðbóta fyrir CAD og PDM forrit í .NET Framework 4.8 og PowerShell
+                \begin{itemize}
+                    \item Sjálfvirkir útreikningar á hráefnisþörf fyrir smíðaða íhluti
+                    \item Sjálfvirkur flutningur gagna úr Vault yfir í MS Dynamics NAV
+                    \item Sjálfvirk sannreynsla og leiðrétting á hönnunargögnum
+                    \item o.fl.
+                \end{itemize}
+            \end{itemize}
+            }
 
         \cventry{2020 -- }{PDM og skýjalausnaráðgjafi}{Sjálfstætt starfandi}{}{}{
-            Uppsetning og viðhald Autodesk Vault PDM kerfa í Azure með bicep skriptum auk hönnun Autodesk Inventor viðbóta í .NET.}
+            % Uppsetning og viðhald Autodesk Vault PDM kerfa í Azure með bicep skriptum auk hönnun Autodesk viðbóta í .NET.
+            \begin{itemize}
+                \item Uppsetning og viðhald kerfa í Azure (VM, VPN, VNET, o.fl.)
+                \item Uppsetning, innleiðing og viðhald Autodesk Vault PDM kerfa
+                \item Hönnun Autodesk viðbóta í .NET
+            \end{itemize}
+            }
 
         \cventry{2018 -- 2020}{Vélahönnuður}{Skaginn 3X}{}{}{
-            Vörueigandi sjálfvirkra plötufrysta, skilgreining innri ferla og flæða, uppsetning og umsjón PDM kerfis, sjálfvirkt eftirlit og flæði gagna úr PDM yfir ERP kerfi, stöðlun íhluta o.fl.}
+            % Vörueigandi sjálfvirkra plötufrysta, skilgreining innri ferla og flæða, uppsetning og umsjón PDM kerfis, sjálfvirkt eftirlit og flæði gagna úr PDM yfir ERP kerfi, stöðlun íhluta o.fl.
+            \begin{itemize}
+                \item Vörueigandi sjálfvirkra plötufrysta
+                \item Skilgreining innri ferla og flæða
+                \item Sjálfvirknivæðing ferla með .NET
+                \item Uppsetning, innleiðing og umsjón Autodesk Vault PDM kerfis
+                \item Stöðlun íhluta
+            \end{itemize}
+            }
         
         \cventry{2015 -- 2017}{Vélahönnuður}{VHE}{}{}{
-            Vélahönnun, sjálfvirknivæðing ferla með, hönnun vörusamskipunartóls (e. product configurator) í .NET og uppsetning/umsjón PDM kerfis.}
+            % Vélahönnun, sjálfvirknivæðing ferla með, hönnun vörusamskipunartóls (e. product configurator) í .NET og uppsetning/umsjón PDM kerfis.
+            \begin{itemize}
+                \item Vélahönnun
+                \item Sjálfvirknivæðing ferla með .NET
+                \item Hönnun vörusamskipunartóls (e. product configurator) í .NET
+                \item Uppsetning, innleiðing og umsjón Autodesk Vault PDM kerfis
+            \end{itemize}
+            }
 	
     \section{Menntun}
 
         \cventry{2009 --}{M.Sc. Vélaverkfræði}{Háskólinn í Reykjavík}{}{}{}
         \cventry{2006 -- 2009}{B.Sc. Hátækniverkfræði}{Háskólinn í Reykjavík}{}{}{}
+        \cventry{2001 -- 2005}{Náttúrufræðibraut}{Fjölbrautaskóli Vesturlands Akranesi}{}{}{}
 
 	\section{Forritunarhæfileikar}
 
-        \cvitem{Tungumál}{
+        \cvitem{Forritunarmál}{
             Mjög gott vald á C\# auk mismikillar reynslu í Java, JavaScript/TypeScript, Matlab, Python, Rust og VB.}
 
         \cvitem{Hugbúnaður og tól}{
-            Yfirgripsmkili reynsla í .NET, ASP.NET, Entity Framework, Blazor, SQL, Azure og GitHub Actions. Hef notast við WPF og Docker.}
+            Yfirgripsmikil reynsla af .NET, ASP.NET, Entity Framework, Blazor, MS SQL Server, Azure og GitHub Actions. Hef notast við WPF og Docker.}
 	
+    \newpage
+
 	\section{Áhugamál}
 
         \cvitem{Forritun}{
-            Ég ver frítíma mínum oft í að kynna mér nýja fídusa í C\# og .NET eða áhugaverðar lausnir auk þess að prófa mig áfram með önnur tungumál. Ég horfi á upptökur frá ráðstefnum sem vekja áhuga minn, t.d. NDC, goto; o.fl.}
+            Í frítíma mínum hef ég gefið út opinn hugbúnað sem kallast FluentVault (https://github.com/karirafn/fluentvault). Ég kynni mér nýja fídusa í C\# og .NET eða áhugaverðar lausnir auk þess að prófa mig áfram með önnur tungumál. Ég horfi á upptökur frá ráðstefnum sem vekja áhuga minn, t.d. NDC, goto; o.fl.}
 
         \cvitem{Kraftlyftingar}{
             Ég er með alþjóðleg dómararéttingi í kraftlyftingum og fer erlendis 1-2 sinnum á ári til þess að dæma á alþjóðamótum. Ég var gjaldkeri í stjórn Kraftlyftingasambands Íslands um árabil og var formaður landsliðsnefndar.}
-
-    \newpage
 	
     \section{Tungumál}
 
@@ -124,12 +160,12 @@
         {}
         {\emailsymbol einir@skaginn3x.com \mobilesymbol 866 6352}
         
-        % \cventry
-        % {}
-        % {Nökkvi Andersen}
-        % {Verkefnastjóri}
-        % {Carbfix}
-        % {}
-        % {\emailsymbol nokkvi.andersen@or.is \mobilesymbol 899 9489}
+        \cventry
+        {}
+        {Nökkvi Andersen}
+        {Verkefnastjóri}
+        {Carbfix}
+        {}
+        {\emailsymbol nokkvi.andersen@or.is \mobilesymbol 899 9489}
 
 \end{document}
